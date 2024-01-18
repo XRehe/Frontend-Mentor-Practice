@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      html {
+        background-color: hsl(47, 88%, 63%);
+        font-family: "Figtree", sans-serif;
+        font-weight: 600;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 97vh;
+      }
+      .main-box {
+        background-color: white;
+        border: solid black 1px;
+        border-radius: 15px;
+        width: 336px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 10px 10px;
+      }
+      .svg-img > svg {
+        border-radius: 15px;
+      }
+      .header-1 {
+        background-color: hsl(47, 88%, 63%);
+        border-radius: 5px;
+        margin-right: auto;
+      }
+      .header-1 > p {
+        margin: 5px 10px;
+        font-size: 10px;
+      }
+      .text-1 {
+        margin-right: auto;
+      }
+      .text-1 > p {
+        margin: 8px 0px;
+        font-size: 10px;
+      }
+      .header-2 {
+        color: hsl(47, 88%, 63%);
+        margin-right: auto;
+      }
+      .header-2 > h3 {
+        margin: 8px 0;
+      }
+      .text-2 {
+        width: 300px;
+        margin-right: auto;
+      }
+      .text-2 > p {
+        font-weight: lighter;
+        opacity: 0.5;
+      }
+      .last-part {
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+      }
+      .last-part > p {
+        display: inline-block;
+        margin-left: 10px;
+      }
+      @media screen and (max-width: 375px) {
+        .main-box {
+          width: 200px;
+          height: 370px;
+          padding: 20px;
+        }
+        .svg-img > svg {
+          width: 200px;
+          height: 120px;
+        }
+        .text-2 > p {
+          width: 200px;
+          font-size: 10px;
+        }
+        .last-part > img {
+          width: 27px;
+          height: 27px;
+        }
+        .last-part > p {
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-box">
+        <div class="svg-img">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="336"
+            height="201"
+            fill="none"
+            viewBox="0 0 336 201"
+          >
+            <g clip-path="url(#a)">
+              <path fill="#F4D04E" d="M0 .5h336v200H0z" />
+              <rect
+                width="139"
+                height="95"
+                x="87.996"
+                y="77.729"
+                fill="#fff"
+                rx="47.5"
+                transform="rotate(-45 87.996 77.729)"
+              />
+              <rect
+                width="139"
+                height="95"
+                x="54.055"
+                y="77.729"
+                fill="#111"
+                rx="47.5"
+                transform="rotate(-45 54.055 77.729)"
+              />
+              <path
+                fill="#111"
+                d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"
+              />
+              <rect
+                width="139"
+                height="95"
+                x="20.114"
+                y="77.729"
+                fill="#fff"
+                rx="47.5"
+                transform="rotate(-45 20.114 77.729)"
+              />
+              <rect
+                width="204.19"
+                height="270.554"
+                fill="#111"
+                rx="102.095"
+                transform="scale(-1 1) rotate(45 -103.887 14.564)"
+              />
+              <path
+                stroke="#fff"
+                stroke-width="3"
+                d="m6.69-357.5 135.583 135.727c12.481 12.494 12.481 32.737 0 45.231L-45.544 11.475c-12.481 12.494-12.481 32.737 0 45.23L107.088 209.5"
+              />
+              <path
+                stroke="#111"
+                stroke-width="3"
+                d="M69.965 71.719v23.334h23.334M136.079 52.273V28.94h-23.334M102.845 38.838v46.67M210.364-37.5l60.873 60.873c12.497 12.496 12.497 32.758 0 45.254l-77.745 77.746c-12.497 12.496-12.497 32.758 0 45.254l69.872 69.873"
+              />
+              <path
+                stroke="#111"
+                stroke-width="3"
+                d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.144"
+              />
+              <path
+                stroke="#fff"
+                stroke-width="5"
+                d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"
+              />
+              <mask
+                id="b"
+                width="285"
+                height="285"
+                x="234"
+                y="-8"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: alpha"
+              >
+                <path
+                  fill="#111"
+                  d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"
+                />
+              </mask>
+              <g stroke="#fff" mask="url(#b)">
+                <path
+                  stroke-width="3"
+                  d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145"
+                />
+                <path
+                  stroke-width="5"
+                  d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 .5h336v200H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="header-1">
+          <p>Learning</p>
+        </div>
+        <div class="text-1"><p>Publishes 21 Dec 2023</p></div>
+        <div class="header-2"><h3>HTML & CSS foundations</h3></div>
+        <div class="text-2">
+          <p>
+            These languages are the backbone of every website,defining
+            structure,content and presentation
+          </p>
+        </div>
+        <div class="last-part">
+          <img
+            src="/assets/images/image-avatar.webp"
+            alt="#"
+            width="32px"
+            height="32px"
+          />
+          <p>Greg Hooper</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
