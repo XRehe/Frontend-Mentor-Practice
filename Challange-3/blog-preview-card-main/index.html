@@ -45,22 +45,23 @@
       }
       .header-1 {
         background-color: hsl(47, 88%, 63%);
-        border-radius: 5px;
+        border-radius: 2px;
+        margin-top: 15px;
         margin-right: auto;
       }
       .header-1 > p {
         margin: 5px 10px;
-        font-size: 10px;
+        font-size: 13px;
       }
       .text-1 {
         margin-right: auto;
       }
       .text-1 > p {
-        margin: 8px 0px;
-        font-size: 10px;
+        margin: 12px 0px;
+        font-size: 12px;
+        font-weight: 300;
       }
       .header-2 {
-        color: hsl(47, 88%, 63%);
         margin-right: auto;
       }
       .header-2 > h3 {
@@ -84,15 +85,24 @@
         display: inline-block;
         margin-left: 10px;
       }
+      a {
+        text-decoration: none;
+      }
+      a:visited {
+        color: black;
+      }
+      a:hover {
+        color: hsl(47, 88%, 63%);
+      }
       @media screen and (max-width: 375px) {
         .main-box {
-          width: 200px;
-          height: 370px;
+          width: 270px;
+          height: 400px;
           padding: 20px;
         }
         .svg-img > svg {
-          width: 200px;
-          height: 120px;
+          width: 270px;
+          height: 160px;
         }
         .text-2 > p {
           width: 200px;
@@ -105,6 +115,16 @@
         .last-part > p {
           font-size: 12px;
           font-weight: bold;
+        }
+        .header-1 > p {
+          font-size: 11px;
+        }
+        .text-1 > p {
+          font-size: 11px;
+        }
+        .text-2 > p {
+          font-size: 13px;
+          width: 270px;
         }
       }
     </style>
@@ -216,7 +236,9 @@
           <p>Learning</p>
         </div>
         <div class="text-1"><p>Publishes 21 Dec 2023</p></div>
-        <div class="header-2"><h3>HTML & CSS foundations</h3></div>
+        <div class="header-2">
+          <h3><a href="">HTML & CSS foundations</a></h3>
+        </div>
         <div class="text-2">
           <p>
             These languages are the backbone of every website,defining
@@ -225,7 +247,7 @@
         </div>
         <div class="last-part">
           <img
-            src="/assets/images/image-avatar.webp"
+            src="/blog-preview-card-main/assets/images/image-avatar.webp"
             alt="#"
             width="32px"
             height="32px"
